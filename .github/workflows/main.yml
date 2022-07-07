@@ -1,7 +1,4 @@
-on:
-  push:
-    branches:
-      - main
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -10,10 +7,10 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-
+    
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.MAIN_FTP_PASSWORD }}
+        server: access913988185.webspace-data.io
+        username: U108670439
+        password: ${{ secrets.MAIN_FTP_PASSWORD}}
