@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: access913988185.webspace-data.io
-        username: U108670439
+        username: U108670439@access913988185.webspace-data.io
         password: ${{ secrets.MAIN_FTP_PASSWORD}}
